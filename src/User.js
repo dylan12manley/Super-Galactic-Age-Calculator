@@ -20,6 +20,11 @@ export class User {
       return "You gotta enter an number for both inputs.";
     }
   }
+  getLifeLeft() {
+    let lifeLeft = (this.lifeExpetency-this.age)
+    this.lifeLeft = lifeLeft
+    return this.lifeLeft
+  }
   getMercuryAge() {
     let mercuryAge = (this.age/0.24);
     this.mercuryAge = mercuryAge;
