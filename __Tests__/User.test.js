@@ -20,8 +20,11 @@ describe('User', () => {
   });
   test('determines how long user is expected to live in Mercury year', () => {
     let userC = new User(24, 80, 56, 100);
-    console.log(userC.lifeLeft);
     expect(userC.getMercuryLife()).toEqual(233.33333333333334);
+  });
+  test('converts age to Venus years', () => {
+    let userC = new User(24, 80, 56, 100, 233.33333333333334);
+    expect(userC.getVenusLife()).toEqual(233.33333333333334);
   });
 
 });
