@@ -1,7 +1,13 @@
 export class User {
-  constructor(age, lifeExpetency) {
+  constructor(age, lifeExpetency, mercuryAge, mercuryLife, venusAge, venusLife, marsAge, marsLife) {
     this.age = age,
-    this.lifeExpetency = lifeExpetency
+    this.lifeExpetency = lifeExpetency,
+    this.mercuryAge = 0,
+    this.mercuryLife = 0,
+    this.venusAge = 0,
+    this.venusLife = 0,
+    this.marsAge = 0,
+    this.marsLife = 0
   };
   intergerCheck() {
     if ((this.age < 1) || (this.lifeExpetency < 1)) {
@@ -13,10 +19,11 @@ export class User {
       return "You gotta enter an number for both inputs.";
     }
   }
-  mercuryAge() {
-    let mercuryAge = (this.age/0.24)
+  getMercuryAge() {
+    let mercuryAge = (this.age/0.24);
     console.log(mercuryAge);
-    let this.mercuryAge = mercuryAge;
-    return this.mercuryAge;
+    this.mercuryAge = mercuryAge;
+    console.log(this.mercuryAge);
+    return this.mercuryAge
   }
 };
