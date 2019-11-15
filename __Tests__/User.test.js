@@ -14,13 +14,14 @@ describe('User', () => {
     let userB = new User(24, 80);
     expect(userB.getLifeLeft()).toEqual(56);
   });
+  test('converts age to Mercury years', () => {
+    let userB = new User(24, 80, 56);
+    expect(userB.getMercuryAge()).toEqual(100);
+  });
   test('determines how long user is expected to live in Mercury year', () => {
-    let userC = new User(24, 80, 56);
-    expect(userC.getMercuryLife()).toEqual(100);
+    let userC = new User(24, 80, 56, 100);
+    console.log(userC.lifeLeft);
+    expect(userC.getMercuryLife()).toEqual(233.33333333333334);
   });
 
 });
-// test('converts age to Mercury years', () => {
-//   let userB = new User(24, 80, 0);
-//   expect(userB.getMercuryAge()).toEqual(100);
-// });

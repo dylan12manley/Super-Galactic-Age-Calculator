@@ -2,13 +2,13 @@ export class User {
   constructor(age, lifeExpetency, lifeLeft, mercuryAge, mercuryLife, venusAge, venusLife, marsAge, marsLife) {
     this.age = age,
     this.lifeExpetency = lifeExpetency,
-    this.lifeLeft = 0,
-    this.mercuryAge = 0,
-    this.mercuryLife = 0,
-    this.venusAge = 0,
-    this.venusLife = 0,
-    this.marsAge = 0,
-    this.marsLife = 0
+    this.lifeLeft = lifeLeft,
+    this.mercuryAge = mercuryAge,
+    this.mercuryLife = mercuryLife,
+    this.venusAge = venusAge,
+    this.venusLife = venusLife,
+    this.marsAge = marsAge,
+    this.marsLife = marsLife
   };
   inputChecker() {
       if ((this.age === '') || (this.lifeExpetency === '')) {
@@ -23,14 +23,15 @@ export class User {
     this.lifeLeft = lifeLeft
     return this.lifeLeft
   }
-  // getMercuryAge() {
-  //   let mercuryAge = (this.age/0.24);
-  //   this.mercuryAge = mercuryAge;
-  //   return this.mercuryAge
-  // }
-  // getMercuryAge() {
-  //   let mercuryLife = ((this.lifeExpetency-this.age)/0.24));
-  //   this.mercuryLife = mercuryLife;
-  //   return this.mercuryLife
-  // }
+  getMercuryAge() {
+    let mercuryAge = (this.age/0.24);
+    this.mercuryAge = mercuryAge;
+    return this.mercuryAge
+  }
+  getMercuryLife() {
+    console.log(this.lifeLeft);
+    let mercuryLife = (this.lifeLeft/0.24);
+    this.mercuryLife = mercuryLife;
+    return this.mercuryLife
+  }
 };
