@@ -36,7 +36,7 @@ describe('User', () => {
   });
   test('determines if the user has lived past their life expectancy in Venus years', () => {
     let userE = new User(90, 80, -10, 375, 'You should have died 41.66666666666667 Mercury years ago', 145.161290323);
-    expect(userE.getVenusLife()).toEqual(90.3225806451613);
+    expect(userE.getVenusLife()).toEqual('You should have died 16.129032258064516 Venus years ago');
   });
   test('converts age to mars years', () => {
     let userF = new User(24, 80, 56, 100, 233.33333333333334, 38.70967741935484, 90.3225806451613);
