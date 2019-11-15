@@ -24,7 +24,7 @@ describe('User', () => {
   });
   test('converts age to Venus years', () => {
     let userC = new User(24, 80, 56, 100, 233.33333333333334);
-    expect(userC.getVenusLife()).toEqual(233.33333333333334);
+    expect(userC.getVenusAge()).toEqual(233.33333333333334);
   });
 
 });
