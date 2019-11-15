@@ -19,12 +19,12 @@ export class User {
     }
   }
   getLifeLeft() {
-    let lifeLeft = (this.lifeExpetency-this.age)
+    const lifeLeft = (this.lifeExpetency-this.age)
     this.lifeLeft = lifeLeft
     return this.lifeLeft
   }
   getMercuryAge() {
-    let mercuryAge = (this.age/0.24);
+    const mercuryAge = (this.age/0.24);
     this.mercuryAge = mercuryAge;
     return this.mercuryAge
   }
@@ -40,7 +40,7 @@ export class User {
     }
   }
   getVenusAge() {
-    let venusAge = (this.age/0.62);
+    const venusAge = (this.age/0.62);
     this.venusAge = venusAge;
     return this.venusAge
   }
@@ -56,7 +56,7 @@ export class User {
     }
   }
   getMarsAge() {
-    let marsAge = (this.age/1.88);
+    const marsAge = (this.age/1.88);
     this.marsAge = marsAge;
     return this.marsAge
   }
@@ -72,13 +72,19 @@ export class User {
     }
   }
   getJuipterAge() {
-    let juipterAge = (this.age/11.86);
+    const juipterAge = (this.age/11.86);
     this.juipterAge = juipterAge;
     return this.juipterAge
   }
   getJuipterLife() {
     let juipterLife = (this.lifeLeft/11.86);
     this.juipterLife = juipterLife;
-    return this.juipterLife
+    if (this.juipterLife > 0) {
+      return this.juipterLife
+    } else {
+      let juipterLifeBonus = (juipterLife*(-1))
+      this.juipterLife = `You should have died ${juipterLifeBonus} Juipter years ago`
+      return this.juipterLife
+    }
   }
 };
