@@ -52,7 +52,6 @@ export class User {
     } else {
       let venusLifeBonus = (venusLife*(-1))
       this.venusLife = `You should have died ${venusLifeBonus} Venus years ago`
-      console.log(this);
       return this.venusLife
     }
   }
@@ -64,7 +63,14 @@ export class User {
   getMarsLife() {
     let marsLife = (this.lifeLeft/1.88);
     this.marsLife = marsLife;
-    return this.marsLife
+
+    if (this.marsLife > 0) {
+      return this.marsLife
+    } else {
+      let marsLifeBonus = (marsLife*(-1))
+      this.marsLife = `You should have died ${marsLifeBonus} Mars years ago`
+      return this.marsLife
+    }
   }
   getJuipterAge() {
     let juipterAge = (this.age/11.86);
