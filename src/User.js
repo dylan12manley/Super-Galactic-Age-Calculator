@@ -37,6 +37,6 @@ export class User {
   getVenusAge() {
     let venusAge = (this.age/0.62);
     this.venusAge = venusAge;
-    return this.mercuryAge
+    return this.venusAge
   }
 };
