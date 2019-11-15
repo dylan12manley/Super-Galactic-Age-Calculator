@@ -31,7 +31,13 @@ export class User {
   getMercuryLife() {
     let mercuryLife = (this.lifeLeft/0.24);
     this.mercuryLife = mercuryLife;
-    return this.mercuryLife
+    if (this.mercuryLife > 0) {
+      return this.mercuryLife
+    } else {
+      this.mercuryLife = (mercuryLife*(-1))
+      console.log(this.mercuryLife);
+      return ;
+    }
   }
   getVenusAge() {
     let venusAge = (this.age/0.62);
