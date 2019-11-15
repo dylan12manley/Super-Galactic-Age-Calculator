@@ -18,13 +18,15 @@ describe('User', () => {
     let userB = new User(24, 80, 56);
     expect(userB.getMercuryAge()).toEqual(100);
   });
-  test('determines how long user is expected to live in Mercury year', () => {
+  test('determines how long user is expected to live in Mercury years', () => {
     let userC = new User(24, 80, 56, 100);
     expect(userC.getMercuryLife()).toEqual(233.33333333333334);
   });
   test('converts age to Venus years', () => {
-    let userC = new User(24, 80, 56, 100, 233.33333333333334);
-    expect(userC.getVenusAge()).toEqual(38.70967741935484);
+    let userD = new User(24, 80, 56, 100, 233.33333333333334);
+    expect(userD.getVenusAge()).toEqual(38.70967741935484);
   });
-
+  test('determines how long user is expected to live in Venus years', () => {
+    let userE = new User(24, 80, 56, 100, 233.33333333333334, 38.70967741935484);
+    expect(userE.getMercuryLife()).toEqual(90.3225806452);
 });
