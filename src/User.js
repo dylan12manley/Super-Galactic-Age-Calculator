@@ -10,16 +10,19 @@ export class User {
     this.marsAge = 0,
     this.marsLife = 0
   };
-  intergerCheck() {
-    if ((this.age < 1) || (this.lifeExpetency < 1)) {
+  inputChecker() {
+      if ((this.age === '') || (this.lifeExpetency === '')) {
+      return "You gotta enter an number for both inputs.";
+    }
+      else if ((this.age < 1) || (this.lifeExpetency < 1)) {
       return "How can you live in negative years?";
     }
   }
-  inputCheck() {
-    if ((this.age === '') || (this.lifeExpetency === '')) {
-      return "You gotta enter an number for both inputs.";
-    }
-  }
+  // inputCheck() {
+  //   if ((this.age === '') || (this.lifeExpetency === '')) {
+  //     return "You gotta enter an number for both inputs.";
+  //   }
+  // }
   getLifeLeft() {
     let lifeLeft = (this.lifeExpetency-this.age)
     this.lifeLeft = lifeLeft

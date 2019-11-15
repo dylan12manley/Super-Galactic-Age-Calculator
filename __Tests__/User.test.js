@@ -4,11 +4,11 @@ describe('User', () => {
 
   test('should determine user inputs a positive interger', () => {
     let user = new User(-10, 80);
-    expect(user.intergerCheck()).toEqual("How can you live in negative years?");
+    expect(user.inputChecker()).toEqual("How can you live in negative years?");
   });
   test('should determine user inputs are filled', () => {
     let userA = new User('', 80);
-    expect(userA.inputCheck()).toEqual("You gotta enter an number for both inputs.");
+    expect(userA.inputChecker()).toEqual("You gotta enter an number for both inputs.");
   });
   test('determines how long user is expected to remain liveing', () => {
     let userC = new User(24, 80);
