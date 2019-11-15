@@ -22,7 +22,7 @@ describe('User', () => {
     let userC = new User(24, 80, 56, 100);
     expect(userC.getMercuryLife()).toEqual(233.33333333333334);
   });
-  test('determines if the user has lived past their life expectancy', () => {
+  test('determines if the user has lived past their life expectancy on Mercury', () => {
     let userC = new User(90, 100, -10, 375, -41.66666666666667)
     expect(userC.getMercuryLife()).toEqual('You should have died 41.66666666666667 Mercury years ago')
   })
@@ -32,6 +32,10 @@ describe('User', () => {
   });
   test('determines how long user is expected to live in Venus years', () => {
     let userE = new User(24, 80, 56, 100, 233.33333333333334, 38.70967741935484);
+    expect(userE.getVenusLife()).toEqual(90.3225806451613);
+  });
+  test('determines if the user has lived past their life expectancy in Venus years', () => {
+    let userE = new User(90, 80, -10, 375, 'You should have died 41.66666666666667 Mercury years ago', 145.161290323);
     expect(userE.getVenusLife()).toEqual(90.3225806451613);
   });
   test('converts age to mars years', () => {
