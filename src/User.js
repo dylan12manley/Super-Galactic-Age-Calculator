@@ -1,7 +1,8 @@
 export class User {
-  constructor(age, lifeExpetency, mercuryAge, mercuryLife, venusAge, venusLife, marsAge, marsLife) {
+  constructor(age, lifeExpetency, lifeLeft, mercuryAge, mercuryLife, venusAge, venusLife, marsAge, marsLife) {
     this.age = age,
     this.lifeExpetency = lifeExpetency,
+    this.lifeLeft = 0,
     this.mercuryAge = 0,
     this.mercuryLife = 0,
     this.venusAge = 0,
@@ -21,9 +22,12 @@ export class User {
   }
   getMercuryAge() {
     let mercuryAge = (this.age/0.24);
-    console.log(mercuryAge);
     this.mercuryAge = mercuryAge;
-    console.log(this.mercuryAge);
     return this.mercuryAge
   }
+  // getMercuryAge() {
+  //   let mercuryLife = ((this.lifeExpetency-this.age)/0.24));
+  //   this.mercuryLife = mercuryLife;
+  //   return this.mercuryLife
+  // }
 };

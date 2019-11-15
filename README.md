@@ -21,6 +21,7 @@ _This program takes inputs from the user for their age and life expectancy and d
 |-|-|-|
 |Program receives user's age|10|10|
 |Program receives user's life expectancy|80|80|
+|Program calculates expect life remaining|10, 80|70|
 |Program checks to insure age inputted is greater than 0|-1|"Please enter an age greater than 1"|
 |Program converts age to Mercury years|10|41.67|
 |Program converts life expectancy to Mercury years|10|41.67|
