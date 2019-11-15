@@ -8,4 +8,9 @@ export class User {
       return "How can you live in negative years?";
     }
   }
+  inputCheck() {
+    if ((this.age === '') || (this.lifeExpetency === '')) {
+      return "You gotta enter an number for both inputs.";
+    }
+  }
 };

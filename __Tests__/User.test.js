@@ -8,9 +8,9 @@ describe('User', () => {
    expect(user.intergerCheck()).toEqual("How can you live in negative years?");
  });
  test('should determine user inputs are filled', () => {
-  let user = new User(10, 80);
-  console.log(user.age);
-  expect(user.inputCheck()).toEqual("You gotta enter an number for both inputs");
+  let userA = new User('', 80);
+  console.log(userA.age);
+  expect(userA.inputCheck()).toEqual("You gotta enter an number for both inputs.");
 });
 });
 //  test('should determine *spec 1*', () => {
