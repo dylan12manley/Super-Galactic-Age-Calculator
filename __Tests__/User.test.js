@@ -12,8 +12,10 @@ describe('User', () => {
   });
   test('converts age to Mercury years', () => {
     let userB = new User(24, 80);
-    userB.getMercuryAge()
-    console.log(userB.mercuryAge);
     expect(userB.getMercuryAge()).toEqual(100);
   });
+  test('determines how long user is expected to live in Mercury year'), () => {
+    let userC = new User(24, 80, 100);
+    expect(userC.getMercuryLife()).toEqual(100);
+  }
 });
