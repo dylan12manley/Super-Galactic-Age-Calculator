@@ -44,7 +44,7 @@ describe('User', () => {
   });
   test('determines how long user is expected to live in Mars years', () => {
     let userE = new User(90, 80, -10, 375, 'You should have died 41.66666666666667 Mercury years ago', 145.161290323, 'You should have died 16.129032258064516 Venus years ago', 47.8723404255);
-    expect(userE.getMarsLife()).toEqual(29.787234042553195);
+    expect(userE.getMarsLife()).toEqual('You should have died 5.319148936170213 Mars years ago');
   });
   test('converts age to Jupiter years', () => {
     let userF = new User(24, 80, 56, 100, 233.33333333333334, 38.70967741935484, 90.3225806451613, 12.765957446808512, 29.787234042553195);
