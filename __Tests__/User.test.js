@@ -11,16 +11,15 @@ describe('User', () => {
     expect(userA.inputChecker()).toEqual("You gotta enter an number for both inputs.");
   });
   test('determines how long user is expected to remain liveing', () => {
-    let userC = new User(24, 80);
-    expect(userC.getLifeLeft()).toEqual(56);
+    let userB = new User(24, 80);
+    expect(userB.getLifeLeft()).toEqual(56);
   });
+  test('determines how long user is expected to live in Mercury year', () => {
+    let userC = new User(24, 80, 56);
+    expect(userC.getMercuryLife()).toEqual(100);
+  });
+
 });
-
-  // test('determines how long user is expected to live in Mercury year', () => {
-  //   let userC = new User(24, 80, 100);
-  //   expect(userC.getMercuryLife()).toEqual(100);
-  // });
-
 // test('converts age to Mercury years', () => {
 //   let userB = new User(24, 80, 0);
 //   expect(userB.getMercuryAge()).toEqual(100);
