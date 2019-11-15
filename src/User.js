@@ -11,10 +11,10 @@ export class User {
     this.marsLife = marsLife
   };
   inputChecker() {
-      if ((this.age === '') || (this.lifeExpetency === '')) {
+    if ((this.age === '') || (this.lifeExpetency === '')) {
       return "You gotta enter an number for both inputs.";
     }
-      else if ((this.age < 1) || (this.lifeExpetency < 1)) {
+    else if ((this.age < 1) || (this.lifeExpetency < 1)) {
       return "How can you live in negative years?";
     }
   }
