@@ -12,7 +12,7 @@ describe('User', () => {
 });
 test('converts age to Mercury years', () => {
  let userB = new User(24, 80);
- expect(userA.mercuryAge()).toEqual(100);
+ expect(userB.mercuryAge()).toEqual(100);
 });
 });
 //  test('should determine *spec 1*', () => {
