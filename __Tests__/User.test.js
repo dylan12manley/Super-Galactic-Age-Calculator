@@ -28,5 +28,10 @@ describe('User', () => {
   });
   test('determines how long user is expected to live in Venus years', () => {
     let userE = new User(24, 80, 56, 100, 233.33333333333334, 38.70967741935484);
-    expect(userE.getMercuryLife()).toEqual(90.3225806452);
+    expect(userE.getVenusLife()).toEqual(90.3225806451613);
+  });
+  test('converts age to mars years', () => {
+    let userF = new User(24, 80, 56, 100, 233.33333333333334, 38.70967741935484, 90.3225806451613,);
+    expect(userF.getMarsAge()).toEqual(12.7659574468);
+  });
 });

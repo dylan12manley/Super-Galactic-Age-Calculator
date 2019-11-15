@@ -29,7 +29,6 @@ export class User {
     return this.mercuryAge
   }
   getMercuryLife() {
-    console.log(this.lifeLeft);
     let mercuryLife = (this.lifeLeft/0.24);
     this.mercuryLife = mercuryLife;
     return this.mercuryLife
@@ -38,5 +37,10 @@ export class User {
     let venusAge = (this.age/0.62);
     this.venusAge = venusAge;
     return this.venusAge
+  }
+  getVenusLife() {
+    let venusLife = (this.lifeLeft/0.62);
+    this.venusLife = venusLife;
+    return this.venusLife
   }
 };
