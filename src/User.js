@@ -58,4 +58,9 @@ export class User {
     this.juipterAge = juipterAge;
     return this.juipterAge
   }
+  getJuipterLife() {
+    let juipterLife = (this.lifeLeft/11.86);
+    this.juipterLife = juipterLife;
+    return this.juipterLife
+  }
 };
