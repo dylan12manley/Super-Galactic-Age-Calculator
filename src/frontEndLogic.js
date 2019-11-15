@@ -1,4 +1,4 @@
-import { calculator } from './../src/calculator.js';
+import { User } from './../src/User.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
