@@ -36,7 +36,6 @@ export class User {
     } else {
       let mercuryLifeBonus = (mercuryLife*(-1))
       this.mercuryLife = `You should have died ${mercuryLifeBonus} Mercury years ago`
-      console.log(this);
       return this.mercuryLife
     }
   }
@@ -48,7 +47,14 @@ export class User {
   getVenusLife() {
     let venusLife = (this.lifeLeft/0.62);
     this.venusLife = venusLife;
-    return this.venusLife
+    if (this.venusLife > 0) {
+      return this.venusLife
+    } else {
+      let venusLifeBonus = (venusLife*(-1))
+      this.venusLife = `You should have died ${venusLifeBonus} Venus years ago`
+      console.log(this);
+      return this.venusLife
+    }
   }
   getMarsAge() {
     let marsAge = (this.age/1.88);
