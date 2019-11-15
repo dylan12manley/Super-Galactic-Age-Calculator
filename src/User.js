@@ -43,4 +43,9 @@ export class User {
     this.venusLife = venusLife;
     return this.venusLife
   }
+  getMarsAge() {
+    let marsAge = (this.age/1.88);
+    this.marsAge = marsAge;
+    return this.marsAge
+  }
 };
