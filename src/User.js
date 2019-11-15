@@ -48,4 +48,9 @@ export class User {
     this.marsAge = marsAge;
     return this.marsAge
   }
+  getMarsLife() {
+    let marsLife = (this.lifeLeft/1.88);
+    this.marsLife = marsLife;
+    return this.marsLife
+  }
 };
