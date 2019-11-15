@@ -44,7 +44,7 @@ describe('User', () => {
   });
   test('determines how long user is expected to live in Juipter years', () => {
     let userE = new User(24, 80, 56, 100, 233.33333333333334, 38.70967741935484, 90.3225806451613, 12.765957446808512, 29.787234042553195, 2.0236087689713322);
-    expect(userE.getJuipterLife()).toEqual(29.787234042553195);
+    expect(userE.getJuipterLife()).toEqual(4.7217537942664425);
   });
 
 });
