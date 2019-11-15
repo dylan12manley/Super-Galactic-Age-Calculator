@@ -54,5 +54,9 @@ describe('User', () => {
     let userE = new User(24, 80, 56, 100, 233.33333333333334, 38.70967741935484, 90.3225806451613, 12.765957446808512, 29.787234042553195, 2.0236087689713322);
     expect(userE.getJuipterLife()).toEqual(4.7217537942664425);
   });
+  test('determines how long the user has live past expentency in Juipter years', () => {
+    let userE = new User(90, 80, -10, 375, 'You should have died 41.66666666666667 Mercury years ago', 145.161290323, 'You should have died 16.129032258064516 Venus years ago', 47.8723404255, 'You should have died 5.319148936170213 Mars years ago', 7.58853288364);
+    expect(userE.getJuipterLife()).toEqual(4.7217537942664425);
+  });
 
 });
