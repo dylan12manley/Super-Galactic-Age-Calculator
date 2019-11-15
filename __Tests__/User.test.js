@@ -4,13 +4,15 @@ describe('User', () => {
 
   test('should determine user inputs a positive interger', () => {
    let user = new User(-10, 80);
-   console.log(user.age);
    expect(user.intergerCheck()).toEqual("How can you live in negative years?");
  });
  test('should determine user inputs are filled', () => {
   let userA = new User('', 80);
-  console.log(userA.age);
   expect(userA.inputCheck()).toEqual("You gotta enter an number for both inputs.");
+});
+test('converts age to Mercury years', () => {
+ let userB = new User(24, 80);
+ expect(userA.mercuryAge()).toEqual(100);
 });
 });
 //  test('should determine *spec 1*', () => {
