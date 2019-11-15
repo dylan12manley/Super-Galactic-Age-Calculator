@@ -17,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Triangle Tracker Refactored',
+      title: 'Inner Galactic, Planatory, Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })
