@@ -34,9 +34,10 @@ export class User {
     if (this.mercuryLife > 0) {
       return this.mercuryLife
     } else {
-      this.mercuryLife = (mercuryLife*(-1))
-      console.log(this.mercuryLife);
-      return ;
+      mercuryLifeBonus = (mercuryLife*(-1))
+      console.log(mercuryLifeBonus);
+      this.mercuryLife = `You should have died ${mercuryLifeBonus} mercury years ago`
+      return this.mercuryLife
     }
   }
   getVenusAge() {
