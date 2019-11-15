@@ -63,7 +63,6 @@ export class User {
   getMarsLife() {
     let marsLife = (this.lifeLeft/1.88);
     this.marsLife = marsLife;
-
     if (this.marsLife > 0) {
       return this.marsLife
     } else {
