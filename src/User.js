@@ -13,4 +13,10 @@ export class User {
       return "You gotta enter an number for both inputs.";
     }
   }
+  mercuryAge() {
+    let mercuryAge = (this.age/0.24)
+    console.log(mercuryAge);
+    let this.mercuryAge = mercuryAge;
+    return this.mercuryAge;
+  }
 };
