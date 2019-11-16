@@ -9,7 +9,7 @@ export class User {
     this.venusLife = venusLife,
     this.marsAge = marsAge,
     this.marsLife = marsLife
-  };
+  }
   inputChecker() {
     if ((this.age === '') || (this.lifeExpetency === '')) {
       return "You gotta enter an number for both inputs.";
@@ -87,4 +87,4 @@ export class User {
       return this.juipterLife
     }
   }
-};
+}
