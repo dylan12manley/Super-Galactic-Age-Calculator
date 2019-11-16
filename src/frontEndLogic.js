@@ -22,5 +22,13 @@ $(document).ready(function() {
     myUser.getJuipterLife();
     console.log(myUser);
     $('#results').text(`Your Earth age is ${myUser.age}`);
+    $('#results').text(`The expected amount of years before you die is ${myUser.lifeLeft}`);
+    $('#results').text(`On Mercury, you would be ${myUser.mercuryAge} years old`);
+    // if (myUser.mercuryLife > 0){
+    //   $('#results').text(`On Mercury, you would be ${myUser.mercuryAge} years old`)
+    // } else if (mysUser.mercuryLife < 0){
+    //   $('#restlts').text(myUser.mercuryLife);
+    // };
+
   });
 });
